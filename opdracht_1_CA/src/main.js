@@ -1,7 +1,6 @@
 import './styles/reset.css';
 import './styles/style.css';
-require('dotenv').config();
-const apiKey = process.env.API_KEY;
+
 
 
 // core version + navigation, pagination modules:
