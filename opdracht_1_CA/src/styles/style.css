@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --swiper-navigation-color: #ffffef;
+  --swiper-pagination-color: #ffffef;
+  --background-color: #ffffef;
+  --grey: #323232; 
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'oswald', sans-serif;
+}
+
+h1 {
+  color: var(--background-color);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--grey);
+}
+
+.swiper {
+  width: 95vw;
+  height: 50vh;
+  border-radius: 32px;
+  margin-top: 2rem;
+}
+
+.box-image {
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; 
+}
+
+.temp {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 32px;
+  background-color: var(--background-color);
+  transition: all 0.3s ease;
+}
+
+.temp:hover {
+  height: 55px;
+  width: 210px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-andere {
+  width: 100%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.grid-andere .swiper {
+  width: 45vw;
+  height: 100%;
+}
+ 
+.loader {
+  border: 2px solid #f3f3f3; /* Lichte kleur */
+  border-top: 2px solid #3498db; /* Donkere kleur voor de draaiende top */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  
+}
+
+/* De draaiende animatie */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
